@@ -21,10 +21,10 @@ const connect = function () {
     const commands = [
       { command: "Successfully connected to game server", delay: 50 },
       { command: "Name: VIC", delay: 100 },
-      { command: "Move: up", delay: 200 },
-      { command: "Move: down", delay: 300 },
-      { command: "Move: left", delay: 400 },
-      { command: "Move: right", delay: 500 },
+      // { command: "Move: up", delay: 200 },
+      // { command: "Move: down", delay: 300 },
+      // { command: "Move: left", delay: 400 },
+      // { command: "Move: right", delay: 500 },
     ];
 
     // Loop through commands and set timeouts
