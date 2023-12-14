@@ -20,16 +20,12 @@ const connect = function() {
     // Commands with different delays
     const commands = [
       { command: "Successfully connected to game server", delay: 50 },
-      { command: "Name: VIC", delay: 100 },
-      { command: "Move: up", delay: 200 },
-      { command: "Move: down", delay: 300 },
-      { command: "Move: left", delay: 400 },
-      { command: "Move: right", delay: 500 },
+      { command: "Name: VIC", delay: 100 }
     ];
 
     // Loop through commands and set timeouts
     commands.forEach(({ command, delay }) => {
-      setInterval(() => {
+      setTimeout(() => {
         conn.write(command);
       }, delay);
     });
