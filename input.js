@@ -8,7 +8,7 @@ const setupInput = function(conn) {
   stdin.resume();
 
   stdin.on('data', handleUserInput);
-
+  
   return stdin;
 };
 
@@ -23,7 +23,12 @@ const handleUserInput = function(usrInput) {
     connection.write("Move: down");
   } else if (usrInput === 'd') {
     connection.write("Move: right");
+  } else if(usrInput === 'z') {
+    connection.write("Say: Hey Guys!")
+  }else if(usrInput === 'x') {
+    connection.write('Say: Coding is tough and fun')
   }
+  
 };
 
 module.exports = setupInput;
